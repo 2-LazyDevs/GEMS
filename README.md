@@ -1,2 +1,3 @@
-# LICENSE
-The official 2LD OSL (2LazyDevs Open Source License). This is the license which we use in all of the software that we've made opensource.
+# GEMS (Godot Error Meanings)
+
+The GEM for Godot devs. A big database with detailed information on the warnings & errors you are getting. Currently W.I.P (Work in progress).
