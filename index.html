@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GEMS</title>
+
+  <style>
+    body { 
+      font-family: system-ui, sans-serif; 
+      max-width: 800px; 
+      margin: 50px auto; 
+      padding: 0 20px;
+    }
+    input {
+      width: 100%; 
+      padding: 12px; 
+      font-size: 18px; 
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    .error { 
+      font-weight: bold; 
+      color: #c00; 
+      font-size: 18px;
+    }
+    .divider { 
+      margin: 25px 0; 
+      border-bottom: 1px solid #ddd; 
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>GEMS</h1>
+<p>The GEM for Godot devs. A big database with detailed information on the warnings & errors you are getting. Currently W.I.P (Work in progress).</p>
+
+<input id="search" placeholder="Navigation server 2D singleton error">
+
+<div id="results"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
