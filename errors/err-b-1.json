@@ -1,24 +1,34 @@
 {
-    "error": "NavigationServer2D singleton error",
+    "error": "NavigationServer singleton error",
     "aliases": [
-        "NavigationServer2D singleton already assigned",
-        "NavigationServer2D duplicate initialization"
+        "NavigationServer singleton already assigned",
+        "NavigationServer duplicate initialization",
+        "NavServer singleton already assigned",
+        "NavServer duplicate initialization",
+        "NavigationServer2D singleton error",
+        "NavigationServer2D duplicate initialization",
+        "NavServer2D singleton error",
+        "NavServer2D duplicate initialization",
+        "NavigationServer3D singleton error",
+        "NavigationServer3D duplicate initialization",
+        "NavServer3D singleton error",
+        "NavServer3D duplicate initialization"
     ],
-    "category": "NavigationServer2D",
-    "meaning": "Godot tried to create another instance of NavigationServer2D, but another one exists.",
+    "category": "NavigationServer",
+    "meaning": "Godot tried to create another instance of NavigationServer, but another one exists.",
     "causes": [
-        "A module or plugin is trying to create another instance of NavigationServer2D.",
-        "The initialization code for NavigationServer2D is being executed twice while the engine is starting.",
-        "A module or plugin tries to re-register NavigationServer2D even though Godot already registered it."
+        "A module or plugin is trying to create another instance of NavigationServer.",
+        "The initialization code for NavigationServer is being executed twice while the engine is starting.",
+        "A module or plugin tries to re-register NavigationServer even though Godot already registered it."
     ],
     "fixes": [
-        "Ensure that NavigationServer2D is registered only once.",
-        "Remove any calls in the modules or plugins you have installed which may try to create another instance of NavigationServer2D.",
-        "If modifying the engine source, check for any calls to re-execute the initialization code for NavigationServer2D."
+        "Ensure that NavigationServer is registered only once.",
+        "Remove any calls in the modules or plugins you have installed which may try to create another instance of NavigationServer.",
+        "If modifying the engine source, check for any calls to re-execute the initialization code for NavigationServer."
     ],
     "notes": [
         "This error normally does not appear in standard GDScript/C# usage.",
-        "NavigationServer2D is managed by Godot, user code should not cause this error to happen"
+        "NavigationServer is managed by Godot, user code should not cause this error to happen."
     ],
-    "version": ["Can happen in any version"]
+    "version": ["4.x"]
 }

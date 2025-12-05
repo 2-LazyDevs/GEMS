@@ -1,0 +1,23 @@
+{
+    "error": "NavigationServer free_rid error",
+    "aliases": [
+        "NavigationServer parser object doesn't exist",
+        "NavigationServer parser returns null"
+    ],
+    "category": "NavigationServer",
+    "meaning": "Good tried to delete/free a navigation mesh parser object, but it does not exist or has already been freed.",
+    "causes": [
+        "The passed RID (Resource ID) was never created or was already freed.",
+        "The parser object was already deleted elsewhere before free_rid was called.",
+        "Incorrect usage of the API by freeing an invalid RID."
+    ],
+    "fixes": [
+        "Make sure that the RID you are using is valid by doing error checks.",
+        "Check if the parser object exists."
+    ],
+    "notes": [
+        "This error normally does not appear in standard GDScript/C# usage.",
+        "NavigationServer is managed by Godot, user code should not cause this error to happen."
+    ],
+    "version": ["4.x"]
+}

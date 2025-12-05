@@ -1,0 +1,23 @@
+{
+    "error": "NavigationServer is null",
+    "aliases": [
+        "NavigationServer parser object doesn't exist",
+        "NavigationServer parser returns null"
+    ],
+    "category": "NavigationServer",
+    "meaning": "",
+    "causes": [
+        "",
+        "",
+        ""
+    ],
+    "fixes": [
+        "",
+        ""
+    ],
+    "notes": [
+        "",
+        ""
+    ],
+    "version": ["4.x"]
+}
