@@ -2,7 +2,7 @@ const ERROR_DIR = "errors/";
 const BATCH_PREFIX = "err-b-"; 
 let db = [];
 
-const MAX_BATCHES = 50;
+const MAX_BATCHES = 20;
 const batches = Array.from({ length: MAX_BATCHES }, (_, i) => `err-b-${i + 1}.json`);
 
 
@@ -35,7 +35,7 @@ function renderResults(results) {
   container.innerHTML = "";
 
   if (results.length === 0) {
-    container.innerHTML = `<p>No matching entry found yet.</p>`;
+    container.innerHTML = `<p>Uh Oh... It seems that the error you are looking for has not been added yet to GEMS.</p>`;
     return;
   }
 
@@ -65,7 +65,7 @@ function renderResults(results) {
 // Intialize
 document.getElementById("search").addEventListener("input", e => {
   const query = e.target.value.trim();
-  if (query.length < 2) {
+  if (query.length < 1) {
     document.getElementById("results").innerHTML = "";
     return;
   }
