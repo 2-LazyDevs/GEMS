@@ -1,14 +1,15 @@
 {
-    "error": "NavigationServer is null",
+    "error": "GET_NODE_DEFAULT_WITHOUT_ONREADY Warning",
     "aliases": [
-        "NavigationServer parser object doesn't exist",
-        "NavigationServer parser returns null"
+        "Node default onready warning",
+        "onready warning"
     ],
-    "category": "NavigationServer",
-    "meaning": "",
+    "id": "GNDWOW",
+    "category": "GDScript Warnings",
+    "meaning": "You intialized a node's property to a location in the scene tree without using `@onready`.",
     "causes": [
-        "",
-        "",
+        "Declaring a variable without `@onready`.",
+        "E.g. `var gem1 = $GEM1`.",
         ""
     ],
     "fixes": [

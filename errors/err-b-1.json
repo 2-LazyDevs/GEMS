@@ -14,6 +14,7 @@
         "NavServer3D singleton error",
         "NavServer3D duplicate initialization"
     ],
+    "id": "NSSE",
     "category": "NavigationServer",
     "meaning": "Godot tried to create another instance of NavigationServer, but another one exists.",
     "causes": [

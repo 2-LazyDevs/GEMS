@@ -22,10 +22,20 @@ async function loadErrors() {
 
 // Search logic
 function searchErrors(query) {
-  query = query.toLowerCase();
+  const q = query.toLowerCase();
+
   return db.filter(entry =>
-    entry.error.toLowerCase().includes(query) ||
-    (entry.aliases && entry.aliases.some(a => a.toLowerCase().includes(query)))
+    // ID lookup
+    entry.id?.toLowerCase().includes(q) ||
+
+    // Error message
+    entry.error?.toLowerCase().includes(q) ||
+
+    // Category lookup
+    entry.category?.toLowerCase().includes(q) ||
+
+    // Aliases
+    entry.aliases?.some(a => a.toLowerCase().includes(q))
   );
 }
 
@@ -43,7 +53,9 @@ function renderResults(results) {
     container.innerHTML += `
       <div class="divider"></div>
       <p class="error">${entry.error}</p>
-      
+      <p><strong>GEMS ID:</strong> ${entry.id}</p>
+      <p><strong>Category:</strong> ${entry.category || "Uncategorized"}</p>
+
       ${entry.meaning ? `<p><strong>Meaning:</strong> ${entry.meaning}</p>` : ""}
       
       ${entry.causes && entry.causes.length ? `

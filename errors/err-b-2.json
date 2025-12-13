@@ -4,6 +4,7 @@
         "NavigationServer parser object doesn't exist",
         "NavigationServer parser returns null"
     ],
+    "id": "NSFRE",
     "category": "NavigationServer",
     "meaning": "Good tried to delete/free a navigation mesh parser object, but it does not exist or has already been freed.",
     "causes": [
