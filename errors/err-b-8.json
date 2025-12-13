@@ -1,0 +1,15 @@
+{
+    "error": "The variable is used before being assigned a value.",
+    "aliases": [
+        "UNASSIGNED_VARIABLE"
+    ],
+    "id": "UAVW",
+    "category": "GDScript",
+    "meaning": "The variable isn't given a value before trying to use it.",
+    "causes": [],
+    "fixes": [
+        "Assign a value to the variable before including it in an expression or function call."
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}

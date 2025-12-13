@@ -1,0 +1,17 @@
+{
+    "error": "The local variable is declared but never used in the block. If this is intended, prefix it with an underscore.",
+    "aliases": [
+        "UNUSED_VARIABLE"
+    ],
+    "id": "UUVW",
+    "category": "GDScript",
+    "meaning": "The user declared a variable, but never used it. This causes clutter in the code, and/or suggests that maybe the user meant to use the variable somewhere but forgot to actually incorporate it.",
+    "causes": [],
+    "fixes": [
+        "If a variable is being marked as unused, you probably meant to use it somewhere but forgot to include it in the relevant statement.",
+        "If you're certain you don't need the variable for anything right now, but might need its value later on, prefix its name with an underscore.",
+        "If you know you won't ever need the variable, then simply delete it."
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}

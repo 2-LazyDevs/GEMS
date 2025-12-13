@@ -1,0 +1,16 @@
+{
+    "error": "The local variable is shadowing an already-declared variable at a line in the current class.",
+    "aliases": [
+        "SHADOWED_VARIABLE"
+    ],
+    "id": "SVW",
+    "category": "GDScript",
+    "meaning": "There's a variable with this name previously declared for the class.",
+    "causes": [],
+    "fixes": [
+        "Change the name to something that isn't being used by the class. For example, if receiving a warning about using the identifier \"level\", consider using something more descriptive like \"new_level\".",
+        "If this behavior is intentional, add \"@warning_ignore('SHADOWED_VARIABLE')\" before this line to suppress the warning."
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}

@@ -1,0 +1,20 @@
+{
+    "error": "The default value uses \"get_node()\", \"$\", or \"%\" which won't return nodes in the scene tree before \"_ready()\" is called. Use the \"@onready\" annotation to solve this.",
+    "aliases": [
+        "GET_NODE_DEFAULT_WITHOUT_ONREADY",
+        "The default value uses \"get_node()\" which won't return nodes in the scene tree before \"_ready()\" is called. Use the \"@onready\" annotation to solve this.",
+        "The default value uses \"$\" which won't return nodes in the scene tree before \"_ready()\" is called. Use the \"@onready\" annotation to solve this.",
+        "The default value uses \"%\" which won't return nodes in the scene tree before \"_ready()\" is called. Use the \"@onready\" annotation to solve this."
+    ],
+    "id": "GNDWOW",
+    "category": "GDScript",
+    "meaning": "The user attempted to assign the default value of a property to a node in the scene tree using a reference to the scene tree, before it is set up.",
+    "causes": [
+        "The \"@onready\" annotation is not included before the property declaration attempting to reference the scene tree."
+    ],
+    "fixes": [
+        "Add the \"@onready\" annotation to the beginning of the line."
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}

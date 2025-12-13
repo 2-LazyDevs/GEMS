@@ -1,0 +1,16 @@
+{
+    "error": "Integer division. Decimal part will be discarded.",
+    "aliases": [
+        "INTEGER_DIVISION"
+    ],
+    "id": "IDDW",
+    "category": "GDScript",
+    "meaning": "The user attempted to divide an integer by another integer. The resulting number will be an integer with the decimal/fractional part discarded (not rounded).",
+    "causes": [],
+    "fixes": [
+        "Replace at least one of the operands with a corresponding float. If the number is a literal, do this by adding \".0\" to the end; if it's a variable, wrap it in \"float()\".",
+        "If this behavior is intentional, add \"@warning_ignore('INTEGER_DIVISION')\" before this line to suppress the warning."
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}

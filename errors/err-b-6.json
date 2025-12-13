@@ -1,0 +1,16 @@
+{
+    "error": "The function returns a value that will be discarded if not used.",
+    "aliases": [
+        "RETURN_VALUE_DISCARDED"
+    ],
+    "id": "RVDW",
+    "category": "GDScript",
+    "meaning": "The user called a method that returns a value, but they didn't store or use the value.",
+    "causes": [],
+    "fixes": [
+        "Store the value the method returns in a variable, like this: \"var returned = the_function()\".",
+        "If this behavior is intentional, add \"@warning_ignore('RETURN_VALUE_DISCARDED')\" before this line to suppress the warning."
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}
