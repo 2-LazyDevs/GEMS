@@ -1,15 +1,15 @@
 {
-    "error": "GET_NODE_DEFAULT_WITHOUT_ONREADY Warning",
+    "error": "",
     "aliases": [
-        "Node default onready warning",
-        "onready warning"
+        "",
+        ""
     ],
-    "id": "GNDWOW",
-    "category": "GDScript Warnings",
-    "meaning": "You intialized a node's property to a location in the scene tree without using `@onready`.",
+    "id": "",
+    "category": "",
+    "meaning": "",
     "causes": [
-        "Declaring a variable without `@onready`.",
-        "E.g. `var gem1 = $GEM1`.",
+        "",
+        "",
         ""
     ],
     "fixes": [
