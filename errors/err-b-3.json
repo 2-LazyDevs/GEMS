@@ -1,24 +1,21 @@
 {
-    "error": "",
+    "error": "Invalid custom type script UID: %s. Removing.",
     "aliases": [
-        "",
-        ""
+        "Invalid script UID"
     ],
-    "id": "",
-    "category": "",
-    "meaning": "",
+    "id": "ICTSW",
+    "category": "Editor",
+    "meaning": "Godot found a reference to a custom script UID that no longer exists and removed it.",
     "causes": [
-        "",
-        "",
-        ""
+        "You moved/deleted/renamed a script.",
+        "You change a \"class_name\".",
+        "The editor cache is stale."
     ],
     "fixes": [
-        "",
-        ""
-    ],
-    "notes": [
-        "",
-        ""
+        "Reopen scenes",
+        "Reassign scripts",
+        "Clear/Nuke the \".godot\" folder",
+        "Avoid duplicate \"class_name\"s"
     ],
     "version": ["4.x"]
 }
