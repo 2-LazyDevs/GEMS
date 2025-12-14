@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>GEMS</title>
-  <link rel="stylesheet" href="styles.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <main class="app">
+    <header class="header">
+      <h1>GEMS</h1>
+      <p class="subtitle">
+        The GEM for Godot devs. A big database with detailed information on the warnings & errors you are getting.
+      </p>
+    </header>
 
-<h1>GEMS</h1>
-<p>The GEM for Godot devs. A big database with detailed information on the warnings & errors you are getting. Currently W.I.P (Work in progress).</p>
+    <section class="search-box">
+      <input
+        id="search"
+        type="text"
+        placeholder="Search by error, ID, or category (e.g. ICTSW, singleton, navigation)"
+        autocomplete="off"
+      >
+    </section>
 
-<input id="search" placeholder="Navigation server singleton error">
+    <section id="results" class="results"></section>
 
-<div id="results"></div>
+    <footer class="footer">
+      <p>GEMS is a work in progress. Contributions are welcome.</p>
+    </footer>
+  </main>
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
