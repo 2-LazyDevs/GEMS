@@ -4,7 +4,7 @@
         "UNASSIGNED_VARIABLE"
     ],
     "id": "UAVW",
-    "category": "GDScript",
+    "category": "Scripting",
     "meaning": "The variable isn't given a value before trying to use it.",
     "causes": [],
     "fixes": [

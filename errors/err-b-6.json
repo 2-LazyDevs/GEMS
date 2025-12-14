@@ -4,7 +4,7 @@
         "RETURN_VALUE_DISCARDED"
     ],
     "id": "RVDW",
-    "category": "GDScript",
+    "category": "Scripting",
     "meaning": "The user called a method that returns a value, but they didn't store or use the value.",
     "causes": [],
     "fixes": [

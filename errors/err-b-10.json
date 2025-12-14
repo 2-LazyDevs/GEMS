@@ -1,0 +1,25 @@
+{
+    "error": "Another resource is loaded from path \"res://path/to/resource\" (possible cyclic resource inclusion)",
+    "aliases": [
+        "Cyclic resource inclusion",
+        "Another resource is loaded from path\"res://path/to/resource\""
+    ],
+    "id": "CRIW",
+    "category": "Editor",
+    "meaning": "Godot detected a recurring resource loading cycle.",
+    "causes": [
+        "Scenes referencing each other directly or indirectly",
+        "Mutual \"preload()\" usage between scripts",
+        "Autoloads preloading scenes that reference them",
+        "Resources referencing their owning scene or script",
+        "Editor tool scripts triggering loading a resource again"
+    ],
+    "fixes": [
+    "Replace \"preload()\" with \"load()\" to avoid eager loading cycles",
+    "Decouple scenes using signals or runtime assignment",
+    "Move shared logic into a separate common resource",
+    "Avoid hard references from scenes back to autoloads",
+    "Adjustment \"@tool\" scripts to not trigger editor loads"
+    ],
+    "version": ["4.x"]
+}

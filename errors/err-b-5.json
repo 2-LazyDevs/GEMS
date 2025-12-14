@@ -4,7 +4,7 @@
         "INTEGER_DIVISION"
     ],
     "id": "IDDW",
-    "category": "GDScript",
+    "category": "Scripting",
     "meaning": "The user attempted to divide an integer by another integer. The resulting number will be an integer with the decimal/fractional part discarded (not rounded).",
     "causes": [],
     "fixes": [

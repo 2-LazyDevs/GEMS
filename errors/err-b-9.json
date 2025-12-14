@@ -4,7 +4,7 @@
         "UNUSED_VARIABLE"
     ],
     "id": "UUVW",
-    "category": "GDScript",
+    "category": "Scripting",
     "meaning": "The user declared a variable, but never used it. This causes clutter in the code, and/or suggests that maybe the user meant to use the variable somewhere but forgot to actually incorporate it.",
     "causes": [],
     "fixes": [

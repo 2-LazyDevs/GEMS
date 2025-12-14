@@ -1,0 +1,23 @@
+{
+    "error": "Class \"Your_class\" hides a global script class",
+    "aliases": [
+        "UNUSED_VARIABLE"
+    ],
+    "id": "CNHGC",
+    "category": "Scripting",
+    "meaning": "A script defined a \"class_name\" that conflicts with an existing global class.",
+    "causes": [
+        "Duplicate \"class_name\" in the project",
+        "Using a \"class_name\" that matches a built-in engine class",
+        "Name collision with a plugin or addon class",
+        "Stale editor cache referencing a removed class"
+    ],
+    "fixes": [
+        "Rename the \"class_name\" to be globally unique",
+        "Avoid using names of built-in engine classes",
+        "Audit plugins for class_name conflicts",
+        "Clear the .godot/ folder and reload the project"
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}

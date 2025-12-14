@@ -4,7 +4,7 @@
         "SHADOWED_VARIABLE"
     ],
     "id": "SVW",
-    "category": "GDScript",
+    "category": "Scripting",
     "meaning": "There's a variable with this name previously declared for the class.",
     "causes": [],
     "fixes": [
