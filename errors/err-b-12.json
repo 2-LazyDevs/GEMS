@@ -1,0 +1,25 @@
+{
+    "error": "Found invalid node path 'node_path' on node",
+    "aliases": [
+        "Found invalid node path"
+    ],
+    "id": "INPF",
+    "category": "Scene tree",
+    "meaning": "A stored NodePath no longer points to a valid node in the scene tree.",
+    "causes": [
+        "Node was renamed or moved",
+        "Referenced node was deleted",
+        "Exported NodePath variable not updated",
+        "Animation or tween track referencing a missing node",
+        "Tool script evaluating paths before scene is ready"
+    ],
+    "fixes": [
+        "Update or clear the invalid NodePath in the inspector",
+        "Use \"$NodeName\" or \"@onready\" instead of stored paths",
+        "Validate NodePaths with \"get_node_or_null()\"",
+        "Avoid hardcoded paths in reusable scenes",
+        "Check AnimationPlayer tracks for broken references"
+    ],
+    "notes": [],
+    "version": ["4.x"]
+}

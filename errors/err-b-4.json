@@ -7,7 +7,7 @@
         "The default value uses \"%\" which won't return nodes in the scene tree before \"_ready()\" is called. Use the \"@onready\" annotation to solve this."
     ],
     "id": "GNDWOW",
-    "category": "GDScript",
+    "category": "Scripting",
     "meaning": "The user attempted to assign the default value of a property to a node in the scene tree using a reference to the scene tree, before it is set up.",
     "causes": [
         "The \"@onready\" annotation is not included before the property declaration attempting to reference the scene tree."
