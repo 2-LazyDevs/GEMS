@@ -15,7 +15,7 @@
         "NavServer3D duplicate initialization"
     ],
     "id": "NSSE",
-    "category": "NavigationServer",
+    "category": "Navigation",
     "meaning": "Godot tried to create another instance of NavigationServer, but another one exists.",
     "causes": [
         "A module or plugin is trying to create another instance of NavigationServer.",

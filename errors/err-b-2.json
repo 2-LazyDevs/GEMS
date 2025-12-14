@@ -5,7 +5,7 @@
         "NavigationServer parser returns null"
     ],
     "id": "NSFRE",
-    "category": "NavigationServer",
+    "category": "Navigation",
     "meaning": "Good tried to delete/free a navigation mesh parser object, but it does not exist or has already been freed.",
     "causes": [
         "The passed RID (Resource ID) was never created or was already freed.",
