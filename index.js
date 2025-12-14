@@ -45,30 +45,35 @@ function renderResults(results) {
   container.innerHTML = "";
 
   if (results.length === 0) {
-    container.innerHTML = `<p>Uh Oh... It seems that the error you are looking for has not been added yet to GEMS.</p>`;
+    container.innerHTML =
+      `<p>Uh Oh... It seems that the error you are looking for has not been added yet to GEMS.</p>`;
     return;
   }
 
   results.forEach(entry => {
     container.innerHTML += `
-      <div class="divider"></div>
-      <p class="error">${entry.error}</p>
-      <p><strong>GEMS ID:</strong> ${entry.id}</p>
-      <p><strong>Category:</strong> ${entry.category || "Uncategorized"}</p>
+      <div class="result">
+        <p class="error">${entry.error}</p>
 
-      ${entry.meaning ? `<p><strong>Meaning:</strong> ${entry.meaning}</p>` : ""}
-      
-      ${entry.causes && entry.causes.length ? `
-        <p><strong>Common Causes:</strong></p>
-        <ul>${entry.causes.map(c => `<li>${c}</li>`).join("")}</ul>
-      ` : ""}
+        <p><strong>GEMS ID:</strong> ${entry.id}</p>
+        <p><strong>Category:</strong> ${entry.category || "Uncategorized"}</p>
 
-      ${entry.fixes && entry.fixes.length ? `
-        <p><strong>Fixes:</strong></p>
-        <ul>${entry.fixes.map(f => `<li>${f}</li>`).join("")}</ul>
-      ` : ""}
+        ${entry.meaning ? `<p><strong>Meaning:</strong> ${entry.meaning}</p>` : ""}
 
-      ${entry.version ? `<p><strong>Godot Versions:</strong> ${entry.version.join(", ")}</p>` : ""}
+        ${entry.causes?.length ? `
+          <p><strong>Common Causes:</strong></p>
+          <ul>${entry.causes.map(c => `<li>${c}</li>`).join("")}</ul>
+        ` : ""}
+
+        ${entry.fixes?.length ? `
+          <p><strong>Fixes:</strong></p>
+          <ul>${entry.fixes.map(f => `<li>${f}</li>`).join("")}</ul>
+        ` : ""}
+
+        ${entry.version?.length
+          ? `<p><strong>Godot Versions:</strong> ${entry.version.join(", ")}</p>`
+          : ""}
+      </div>
     `;
   });
 }

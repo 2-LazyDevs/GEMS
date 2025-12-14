@@ -1,23 +1,107 @@
-    body { 
-      font-family: system-ui, sans-serif; 
-      max-width: 800px; 
-      margin: 50px auto; 
-      padding: 0 20px;
-      background-color: darkcyan;
-    }
-    input {
-      width: 100%; 
-      padding: 12px; 
-      font-size: 18px; 
-      margin-top: 10px;
-      box-sizing: border-box;
-    }
-    .error { 
-      font-weight: bold; 
-      color: rgb(0, 14, 204); 
-      font-size: 18px;
-    }
-    .divider { 
-      margin: 25px 0; 
-      border-bottom: 1px solid #ddd; 
-    }
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+  --error: #60a5fa;
+  --border: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  background: linear-gradient(180deg, #020617, var(--bg));
+  color: var(--text);
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: var(--muted);
+  max-width: 700px;
+}
+
+.search-box {
+  margin: 32px 0 24px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--panel);
+  color: var(--text);
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--muted);
+}
+
+input:focus {
+  border-color: var(--accent);
+}
+
+.results {
+  margin-top: 10px;
+}
+
+.result {
+  padding: 18px 20px;
+  border-radius: 10px;
+  background-color: var(--panel);
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.result .error {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--error);
+}
+
+.error {
+  color: var(--error);
+}
+
+.result p {
+  margin: 8px 0;
+}
+
+.result ul {
+  margin: 8px 0 0 18px;
+}
+
+.result li {
+  margin-bottom: 6px;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border);
+  margin: 14px 0;
+}
+
+.footer {
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--muted);
+}
