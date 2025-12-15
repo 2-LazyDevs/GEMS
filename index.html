@@ -22,15 +22,17 @@
         The GEM for Godot devs. A big database with detailed information on the warnings & errors you are getting.
       </p>
     </header>
+    
+  <section class="search-box">
+    <label for="search" class="search-label">🔍</label>
+    <input
+      id="search"
+      type="text"
+      placeholder="Search by error, ID, or category (e.g. ICTSW, singleton, navigation)"
+      autocomplete="off"
+    >
+  </section>
 
-    <section class="search-box">
-      <input
-        id="search"
-        type="text"
-        placeholder="Search by error, ID, or category (e.g. ICTSW, singleton, navigation)"
-        autocomplete="off"
-      >
-    </section>
 
     <section id="results" class="results"></section>
 

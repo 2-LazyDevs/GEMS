@@ -38,8 +38,20 @@ body {
 }
 
 .search-box {
-  margin: 32px 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.search-label {
+  font-size: 1.2rem;
+  cursor: text;
+}
+
+.search-box input {
+  flex: 1;
+}
+
 
 input {
   width: 100%;
